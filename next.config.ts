@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  assetPrefix: "./",
+  assetPrefix: "/",
 };
 
 export default nextConfig;
