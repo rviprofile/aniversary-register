@@ -1,6 +1,6 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
-    Access-Control-Allow-Headers = "Content-Type, Authorization"
+[build]
+  command = "npm run build"
+  publish = ".netlify/functions-internal" # handled by plugin
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
